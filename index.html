@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Social Media Icons With Tooltip</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+
+  </head>
+  <body>
+    <div style="display: flex; align-items: center; height: 100vh;">
+      <div class="profile-pic-container">
+        <img src="./profile.jpg" alt="Profile Picture" class="profile-pic" />
+      </div>
+        <h1 class="profile-title">HEY!</h1>
+      <p>       
+     
+        Hi, I’m Eswanth — an aspiring web developer passionate about bringing ideas to life through code. As a beginner in HTML and CSS, I’m exploring the foundations of web design and layout, one project at a time. I enjoy learning new techniques, experimenting with styling, and building simple, functional websites that reflect my growth as a coder. This portfolio is my space to share what I’m learning and creating. Thanks for stopping by!
+     
+      </p>
+    </div>
+    <div class="wrapper">
+      <a class="icon facebook" href="https://www.facebook.com/profile.php?id=100078274675282" target="_blank">
+        <div class="tooltip">Facebook</div>
+        <span><i class="fa fa-facebook"></i></span>
+      </a>
+      <a class="icon twitter" href="https://x.com/yashreddy321?t=nSOaI1RQXCGyeGlNWwsJGQ&s=08" target="_blank">
+        <div class="tooltip">Twitter</div>
+        <span><i class="fa fa-twitter"></i></span>
+      </a>
+      <a class="icon instagram" href="https://www.instagram.com/itz_me_boost_" target="_blank">
+        <div class="tooltip">Instagram</div>
+        <span><i class="fa fa-instagram"></i></span>
+      </a>
+      <a class="icon github" href="https://github.com/BOOSTREDDY" target="_blank">
+        <div class="tooltip">Github</div>
+        <span><i class="fa fa-github"></i></span>
+      </a>
+      <a class="icon linkedin" href="https://www.linkedin.com/in/eswanth-reddy-anupatla-b26557373?utm_source=share&utm_campaign=share_via&utm_content=profile" target="_blank">
+        <div class="tooltip">LinkedIn</div>
+        <span><i class="fa fa-linkedin"></i></span>
+      </a>
+    </div>
+    <div class="arrow-container">
+      <div class="arrow-text">Checkout my other social media accounts</div>
+      <div class="arrow-circle">
+        <span class="arrow">&#8599;</span>
+      </div>
+    </div>
+    <div class="slider-section">
+      <h2 class="slider-title">My Gallery</h2>
+      <div class="slider">
+        <div class="slides">
+          <img src="porsche.jpg" alt="Slide 1" class="slide active">
+          <img src="redbull.jpeg" alt="Slide 2" class="slide">
+          <img src="bmw.jpg" alt="Slide 3" class="slide">
+        </div>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+      </div>
+    </div>
+    <footer class="footer">
+  &copy; 2025 Eshwanth Reddy. All rights reserved.
+</footer>
+  </body>
+  
+    <script>
+        // JavaScript to handle tooltip visibility
+        document.querySelectorAll('.icon').forEach(icon => {
+        icon.addEventListener('mouseover', () => {
+            icon.querySelector('.tooltip').style.display = 'block';
+        });
+        icon.addEventListener('mouseout', () => {
+            icon.querySelector('.tooltip').style.display = 'none';
+        });
+        });</script>
+</html>
