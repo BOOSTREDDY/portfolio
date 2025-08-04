@@ -146,15 +146,7 @@ align-items: center;
 flex-direction: column;
 box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 cursor: pointer;
-transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
--webkit-border-radius: 50%;
--moz-border-radius: 50%;
--ms-border-radius: 50%;
--o-border-radius: 50%;
--webkit-transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
--moz-transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
--ms-transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
--o-transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
 }
 
 .wrapper .tooltip {
@@ -390,4 +382,5 @@ padding-right: 100px;
   z-index: 1200;
   letter-spacing: 1px;
   margin-top: 60px;
+
 }
